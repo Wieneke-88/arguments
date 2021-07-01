@@ -1,14 +1,12 @@
-/*
+
 //Function Declaration --> ouderwetse manier --> hij herkent numberA en numberB niet in deze functie, waarom? 
 function sum(numberA, numberB) {
-    const sum = function (numberA, numberB) {
-        const multiplyA = numberA * numberA;
-        const multiplyB = numberB * numberB;
-        const add = multiplyA + multiplyB;
-        const sumSquared = add * add;
-        return sumSquared;
-    }
-*/
+    const multiplyA = numberA * numberA;
+    const multiplyB = numberB * numberB;
+    const add = multiplyA + multiplyB;
+    const sumSquared = add * add;
+    return sumSquared;
+}
 
 
 //Function Expression - moderne manier 
@@ -21,8 +19,6 @@ const sum = function (numberA, numberB) {
     return sumSquared;
 }
 
-
-/*
 //Arrow function - moderne manier, korter
 const sum = (numberA, numberB) => {
     const multiplyA = numberA * numberA;
@@ -31,7 +27,6 @@ const sum = (numberA, numberB) => {
     const sumSquared = add * add;
     return sumSquared;
 }
-*/
 
 const numbers = sum(2, 3);
 console.log(numbers);
